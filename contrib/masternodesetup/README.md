@@ -2,7 +2,7 @@
 ***
 ## Required
 1) **MYUS collateral value at current block** ([consult the collateral table](reward_structure.png))
-2) **Local Wallet https://github.com/MultiSysNetwork/MultiSys/releases/latest**
+2) **Local Wallet https://github.com/MultiSys-Official/MultiSys/releases/latest**
 3) **VPS with UBUNTU 18.04** (it is possible to work on other versions but it is not tested)
 4) **Putty https://www.putty.org/**
 5) **Text editor on your local pc to save data for copy/paste**
@@ -30,7 +30,7 @@ You will then receive your private key, save it in a txt to use it later.
 * Once logged in your vps, *copy/paste* each line one by one with *Enter*
 
 ```
-wget -q https://raw.githubusercontent.com/MultiSysNetwork/MultiSys/master/contrib/masternodesetup/masternodesetup.sh
+wget -q https://raw.githubusercontent.com/MultiSys-Official/MultiSys/master/contrib/masternodesetup/masternodesetup.sh
 ```
 
 ```
