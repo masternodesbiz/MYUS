@@ -53,11 +53,6 @@ Remember to do `multisys-cli getblockcount` to check if VPS catching blocks till
 		  multisys-cli addnode seed03.myus-coin.com onetry
 		  multisys-cli addnode seed04.myus-coin.com onetry
 		  multisys-cli addnode seed05.myus-coin.com onetry
-		  multisys-cli addnode seed06.myus-coin.com onetry
-		  multisys-cli addnode seed07.myus-coin.com onetry
-		  multisys-cli addnode seed08.myus-coin.com onetry
-		  multisys-cli addnode seed09.myus-coin.com onetry
-		  multisys-cli addnode seed10.myus-coin.com onetry
 
     
 * Check now if VPS already downloading blocks with the command `multisys-cli getblockcount`, and if yes give it time now to catch last block number 
@@ -81,6 +76,7 @@ Do not close your terminal/ command prompt window at this point.
 
 		Example:
 		startmasternode alias 0 MN1
+		startmasternode all lockwallet
 ***
 
 ***Go back to Putty***
