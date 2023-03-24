@@ -6,12 +6,12 @@
 /* Ensure to persist the spacing used in the rgba() and QColor() constructs as shown    */
 /*                                                                                      */
 /* standard lighter brand color:                   #598527                              */
-/* standard darker brand color:                    #04713C                              */
+/* standard darker brand color:                    #29058B                              */
 /* standard darker brand color as RGB                                                   */
 /*    with a 70% transparency indicator:           rgba(209, 44, 0, 0.7)               */
 /* dark tinted background brand color:             #0F0F0F                              */
 /*                                                                                      */
-/* staking chart POS color:                        #04713C                              */
+/* staking chart POS color:                        #29058B                              */
 /* staking chart POS color as RGB:                 QColor(255, 213, 153)                   */
 /* staking chart MN color:                         #77A02E                              */
 /* staking chart MN color as RGB:                  QColor(214, 76, 76)                   */
@@ -253,8 +253,8 @@ QPushButton:focus {
 }
 
 QPushButton:pressed {
-background-color: #04713C;
-border:1px solid #04713C;
+background-color: #29058B;
+border:1px solid #29058B;
 background-color: qlineargradient(y1:0, y2: 1, stop: 0 #598527, stop: 0.1 #598527, stop: 0.101 #598527, stop: 0.9 #598527, stop: 0.901 #598527, stop: 1 #598527);
 }
 
@@ -280,7 +280,7 @@ background-color: #f2f2f2;
 }
 
 QComboBox { /* Dropdown Menus */
-border:1px solid #04713C;
+border:1px solid #29058B;
 padding: 3px 5px 3px 5px;
 background:#fcfcfc;
 min-height:25px;

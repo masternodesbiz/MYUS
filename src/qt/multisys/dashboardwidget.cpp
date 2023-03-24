@@ -674,8 +674,8 @@ void DashboardWidget::onChartRefreshed()
     // init sets
     set0 = new QBarSet(CURRENCY_UNIT.c_str());
 	set1 = new QBarSet("MN_" + QString(CURRENCY_UNIT.c_str()));
-    set0->setColor(QColor(5,113,60));
-	set1->setColor(QColor(5,147,78));
+    set1->setColor(QColor(95,60,190));  // masternode graph
+	set0->setColor(QColor(146,101,187)); // staking graph
 
     if (!series) {
         series = new QBarSeries();
