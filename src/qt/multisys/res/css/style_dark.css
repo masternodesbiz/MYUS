@@ -1613,7 +1613,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 *[cssClass="img-splash-logo"] {
-  qproperty-icon: url("://img-logo-multisys-png");
+  qproperty-icon: url("://empty-png");
   qproperty-iconSize: 395px 348px;
   border: 0;
   background-color: transparent;
