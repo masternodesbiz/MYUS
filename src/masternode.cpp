@@ -337,62 +337,16 @@ CAmount CMasternode::GetMasternodeNodeCollateral(int nHeight)
 {
 
 
-    if (nHeight >  53000000) 	return      100000 * COIN;
-    if (nHeight >  52999999) 	return      106921 * COIN;
-    if (nHeight >  51999999) 	return      112549 * COIN;
-    if (nHeight >  50999999) 	return      118472 * COIN;
-    if (nHeight >  49999999) 	return      124708 * COIN;
-    if (nHeight >  48999999) 	return      131271 * COIN;
-    if (nHeight >  47999999) 	return      138180 * COIN;
-    if (nHeight >  46999999) 	return      145453 * COIN;
-    if (nHeight >  45999999) 	return      153108 * COIN;
-    if (nHeight >  44999999) 	return      161166 * COIN;
-    if (nHeight >  43999999) 	return      169649 * COIN;
-    if (nHeight >  42999999) 	return      178578 * COIN;
-    if (nHeight >  41999999) 	return      187977 * COIN;
-    if (nHeight >  40999999) 	return      197870 * COIN;
-    if (nHeight >  39999999) 	return      208284 * COIN;
-    if (nHeight >  38999999) 	return      219247 * COIN;
-    if (nHeight >  37999999) 	return      230786 * COIN;
-    if (nHeight >  36999999) 	return      242933 * COIN;
-    if (nHeight >  35999999) 	return      255719 * COIN;
-    if (nHeight >  34999999) 	return      269177 * COIN;
-    if (nHeight >  33999999) 	return      283345 * COIN;
-    if (nHeight >  32999999) 	return      298258 * COIN;
-    if (nHeight >  31999999) 	return      313955 * COIN;
-    if (nHeight >  30999999) 	return      330479 * COIN;
-    if (nHeight >  29999999) 	return      347873 * COIN;
-    if (nHeight >  28999999) 	return      366182 * COIN;
-    if (nHeight >  27999999) 	return      385455 * COIN;
-    if (nHeight >  26999999) 	return      405742 * COIN;
-    if (nHeight >  25999999) 	return      427097 * COIN;
-    if (nHeight >  24999999) 	return      449576 * COIN;
-    if (nHeight >  23999999) 	return      473237 * COIN;
-    if (nHeight >  22999999) 	return      498145 * COIN;
-    if (nHeight >  21999999) 	return      524363 * COIN;
-    if (nHeight >  20999999) 	return      551961 * COIN;
-    if (nHeight >  19999999) 	return      581011 * COIN;
-
-    if (nHeight >  18999999) 	return      611591 * COIN;
-
-    if (nHeight >  17999999) 	return      555992 * COIN;
-    if (nHeight >  16999999) 	return      505447 * COIN;
-    if (nHeight >  15999999) 	return      459497 * COIN;
-    if (nHeight >  14999999) 	return      417725 * COIN;
-    if (nHeight >  13999999) 	return      379750 * COIN;
-    if (nHeight >  12999999) 	return      345227 * COIN;
-    if (nHeight >  11999999) 	return      313843 * COIN;
-    if (nHeight >  10999999) 	return      285312 * COIN;
-    if (nHeight >  9999999) 	return      259374 * COIN;
-    if (nHeight >  8999999) 	return      235795 * COIN;
-    if (nHeight >  7999999) 	return      214359 * COIN;
-    if (nHeight >  6999999) 	return      194872 * COIN;
-    if (nHeight >  5999999) 	return      177156 * COIN;
-    if (nHeight >  4999999) 	return      161051 * COIN;
-    if (nHeight >  3999999) 	return      146410 * COIN;
-    if (nHeight >  2999999) 	return      133100 * COIN;
-    if (nHeight >  1999999) 	return      121000 * COIN;
-    if (nHeight >  999999)  	return      110000 * COIN;
+    if (nHeight >  3200000) 	return      1500000 * COIN;
+    if (nHeight >  2700000) 	return      1000000 * COIN;
+    if (nHeight >  2300000) 	return      900000 * COIN;
+    if (nHeight >  1900000) 	return      800000 * COIN;
+    if (nHeight >  1400000) 	return      700000 * COIN;
+    if (nHeight >  1000000) 	return      600000 * COIN;
+    if (nHeight >  600000) 	return      500000 * COIN;
+    if (nHeight >  400000) 	return      400000 * COIN;
+    if (nHeight >  200000) 	return      300000 * COIN;
+    if (nHeight >  100000)  	return      150000 * COIN;
     if (nHeight >   1) 		return      100000 * COIN;
          
     return 0 * COIN;
@@ -414,173 +368,130 @@ CAmount CMasternode::GetBlockValue(int nHeight)
     else if (nHeight <= 1000) {
         nSubsidy = 10 * COIN;
     }
-    else if (nHeight <= 999999) { 
+    else if (nHeight <= 100000) { 
         nSubsidy = 100 * COIN;
     }
-    else if (nHeight <= 1999999) {
-        nSubsidy = 110 * COIN;
+    else if (nHeight <= 200000) {
+        nSubsidy = 0.05 * COIN;
     }
-    else if (nHeight <= 2999999) {
-        nSubsidy = 121 * COIN;
+    else if (nHeight <= 300000) {
+        nSubsidy = 0.10 * COIN;
     }
-    else if (nHeight <= 3999999) {
-        nSubsidy = 133 * COIN;
+    else if (nHeight <= 400000) {
+        nSubsidy = 0.11 * COIN;
     }
-    else if (nHeight <= 4999999) {
-        nSubsidy = 146 * COIN;
+    else if (nHeight <= 500000) {
+        nSubsidy = 1.5 * COIN;
     }
-    else if (nHeight <= 5999999) { 
-        nSubsidy = 161 * COIN;
+    else if (nHeight <= 600000) { 
+        nSubsidy = 1.6 * COIN;
     }
-    else if (nHeight <= 6999999) { 
-        nSubsidy = 177 * COIN;
+    else if (nHeight <= 700000) { 
+        nSubsidy = 2 * COIN;
     }
-    else if (nHeight <= 7999999) { 
-        nSubsidy = 195 * COIN;
+    else if (nHeight <= 800000) { 
+        nSubsidy = 2.1 * COIN;
     }
-    else if (nHeight <= 8999999) {
-        nSubsidy = 214 * COIN;
+    else if (nHeight <= 900000) {
+        nSubsidy = 2.2 * COIN;
     }
-    else if (nHeight <= 9999999) {
-        nSubsidy = 236 * COIN;
+    else if (nHeight <= 1000000) {
+        nSubsidy = 2.3 * COIN;
     }
-    else if (nHeight <= 10999999) {
-        nSubsidy = 259 * COIN;
+    else if (nHeight <= 1100000) {
+        nSubsidy = 3 * COIN;
     }
-    else if (nHeight <= 11999999) {
-        nSubsidy = 285 * COIN;
+    else if (nHeight <= 1200000) {
+        nSubsidy = 3.1 * COIN;
     }
-    else if (nHeight <= 12999999) {
-        nSubsidy = 314 * COIN;
+    else if (nHeight <= 1300000) {
+        nSubsidy = 3.2 * COIN;
     }
-    else if (nHeight <= 13999999) {
-        nSubsidy = 345 * COIN;
+    else if (nHeight <= 1400000) {
+        nSubsidy = 3.3 * COIN;
     }
-    else if (nHeight <= 14999999) {
-        nSubsidy = 380 * COIN;
+    else if (nHeight <= 1500000) {
+        nSubsidy = 4 * COIN;
     }
-    else if (nHeight <= 15999999) {
-        nSubsidy = 418 * COIN;
+    else if (nHeight <= 1600000) {
+        nSubsidy = 4.1 * COIN;
     }
-    else if (nHeight <= 16999999) {
-        nSubsidy = 459 * COIN;
+    else if (nHeight <= 1700000) {
+        nSubsidy = 4.2 * COIN;
     }
-    else if (nHeight <= 17999999) {
-        nSubsidy = 505 * COIN;
+    else if (nHeight <= 1800000) {
+        nSubsidy = 4.3 * COIN;
     }
-    else if (nHeight <= 18999999) {
-        nSubsidy = 556 * COIN;
+    else if (nHeight <= 1900000) {
+        nSubsidy = 4.4 * COIN;
     }
-
-    else if (nHeight <= 19999999) {
-        nSubsidy = 612 * COIN;
+    else if (nHeight <= 2000000) {
+        nSubsidy = 5 * COIN;
     }
-
-    else if (nHeight <= 20999999) {
-        nSubsidy = 581 * COIN;
+    else if (nHeight <= 2100000) {
+        nSubsidy = 5.1 * COIN;
     }
-    else if (nHeight <= 21999999) {
-        nSubsidy = 552 * COIN;
+    else if (nHeight <= 2200000) {
+        nSubsidy = 5.2 * COIN;
     }
-    else if (nHeight <= 22999999) {
-        nSubsidy = 524 * COIN;
+    else if (nHeight <= 2300000) {
+        nSubsidy = 5.3 * COIN;
     }
-    else if (nHeight <= 23999999) {
-        nSubsidy = 498 * COIN;
+    else if (nHeight <= 2400000) {
+        nSubsidy = 6.5 * COIN;
     }
-    else if (nHeight <= 24999999) {
-        nSubsidy = 473 * COIN;
+    else if (nHeight <= 2500000) {
+        nSubsidy = 6.6 * COIN;
     }
-    else if (nHeight <= 25999999) {
-        nSubsidy = 450 * COIN;
+    else if (nHeight <= 2600000) {
+        nSubsidy = 6.8 * COIN;
     }
-    else if (nHeight <= 26999999) {
-        nSubsidy = 427 * COIN;
+    else if (nHeight <= 2700000) {
+        nSubsidy = 7 * COIN;
     }
-    else if (nHeight <= 27999999) {
-        nSubsidy = 406 * COIN;
+    else if (nHeight <= 2800000) {
+        nSubsidy = 12 * COIN;
     }
-    else if (nHeight <= 28999999) {
-        nSubsidy = 385 * COIN;
+    else if (nHeight <= 2900000) {
+        nSubsidy = 14 * COIN;
     }
-    else if (nHeight <= 29999999) {
-        nSubsidy = 366 * COIN;
+    else if (nHeight <= 3000000) {
+        nSubsidy = 20 * COIN;
     }
-    else if (nHeight <= 30999999) {
-        nSubsidy = 348 * COIN;
+    else if (nHeight <= 3100000) {
+        nSubsidy = 20.5 * COIN;
     }
-    else if (nHeight <= 31999999) {
-        nSubsidy = 330 * COIN;
+    else if (nHeight <= 3200000) {
+        nSubsidy = 30 * COIN;
     }
-    else if (nHeight <= 32999999) {
-        nSubsidy = 314 * COIN;
+    else if (nHeight <= 3300000) {
+        nSubsidy = 50 * COIN;
     }
-    else if (nHeight <= 33999999) {
-        nSubsidy = 298 * COIN;
+    else if (nHeight <= 3400000) {
+        nSubsidy = 60 * COIN;
     }
-    else if (nHeight <= 34999999) {
-        nSubsidy = 283 * COIN;
+    else if (nHeight <= 3500000) {
+        nSubsidy = 70 * COIN;
     }
-    else if (nHeight <= 35999999) {
-        nSubsidy = 269 * COIN;
+    else if (nHeight <= 3600000) {
+        nSubsidy = 80 * COIN;
     }
-    else if (nHeight <= 36999999) {
-        nSubsidy = 256 * COIN;
+    else if (nHeight <= 3700000) {
+        nSubsidy = 90 * COIN;
     }
-    else if (nHeight <= 37999999) {
-        nSubsidy = 243 * COIN;
-    }
-    else if (nHeight <= 38999999) {
-        nSubsidy = 231 * COIN;
-    }
-    else if (nHeight <= 39999999) {
-        nSubsidy = 219 * COIN;
-    }
-    else if (nHeight <= 40999999) {
-        nSubsidy = 209 * COIN;
-    }
-    else if (nHeight <= 41999999) {
-        nSubsidy = 198 * COIN;
-    }
-    else if (nHeight <= 42999999) {
-        nSubsidy = 188 * COIN;
-    }
-    else if (nHeight <= 43999999) {
-        nSubsidy = 179 * COIN;
-    }
-    else if (nHeight <= 44999999) {
-        nSubsidy = 170 * COIN;
-    }
-    else if (nHeight <= 45999999) {
-        nSubsidy = 161 * COIN;
-    }
-    else if (nHeight <= 46999999) {
-        nSubsidy = 153 * COIN;
-    }
-    else if (nHeight <= 47999999) {
-        nSubsidy = 145 * COIN;
-    }
-    else if (nHeight <= 48999999) {
-        nSubsidy = 138 * COIN;
-    }
-    else if (nHeight <= 49999999) {
-        nSubsidy = 131 * COIN;
-    }
-    else if (nHeight <= 50999999) {
-        nSubsidy = 125 * COIN;
-    }
-    else if (nHeight <= 51999999) {
-        nSubsidy = 118 * COIN;
-    }
-    else if (nHeight <= 52999999) {
-        nSubsidy = 113 * COIN;
-    }
-    else if (nHeight <= 53999999) {
-        nSubsidy = 107 * COIN;
-    }
-    else if (nHeight >= 54000000) {
+    else if (nHeight <= 3800000) {
         nSubsidy = 100 * COIN;
     }
+    else if (nHeight <= 3900000) {
+        nSubsidy = 105 * COIN;
+    }
+    else if (nHeight <= 4000000) {
+        nSubsidy = 115 * COIN;
+    }
+    else if (nHeight >= 4000001) {
+        nSubsidy = 150 * COIN;
+    }
+
 
     if(nMoneySupply + nSubsidy > maxMoneyOut) {
         return nMoneySupply + nSubsidy - maxMoneyOut;
@@ -591,9 +502,136 @@ CAmount CMasternode::GetBlockValue(int nHeight)
 
 CAmount CMasternode::GetMasternodePayment(int nHeight)
 {
-     if (nHeight > 1000) return GetBlockValue(nHeight) * 85 / 100;
+ //    if (nHeight > 1000) return GetBlockValue(nHeight) * 85 / 100;
+ //   return 0;
 
-    return 0;
+
+    if (nHeight > 1000 && nHeight <= 100000) { 
+        return 85 * COIN;
+    }
+    else if (nHeight <= 200000) {
+        return 0.04 * COIN;
+    }
+    else if (nHeight <= 300000) {
+        return 0.09 * COIN;
+    }
+    else if (nHeight <= 400000) {
+        return 0.1 * COIN;
+    }
+    else if (nHeight <= 500000) {
+        return 1.3 * COIN;
+    }
+    else if (nHeight <= 600000) { 
+        return 1.4 * COIN;
+    }
+    else if (nHeight <= 700000) { 
+        return 1.7 * COIN;
+    }
+    else if (nHeight <= 800000) { 
+        return 1.8 * COIN;
+    }
+    else if (nHeight <= 900000) {
+        return 1.9 * COIN;
+    }
+    else if (nHeight <= 1000000) {
+        return 2.0 * COIN;
+    }
+    else if (nHeight <= 1100000) {
+        return 2.5 * COIN;
+    }
+    else if (nHeight <= 1200000) {
+        return 2.6 * COIN;
+    }
+    else if (nHeight <= 1300000) {
+        return 2.7 * COIN;
+    }
+    else if (nHeight <= 1400000) {
+        return 2.8 * COIN;
+    }
+    else if (nHeight <= 1500000) {
+        return 3.3 * COIN;
+    }
+    else if (nHeight <= 1600000) {
+        return 3.4 * COIN;
+    }
+    else if (nHeight <= 1700000) {
+        return 3.5 * COIN;
+    }
+    else if (nHeight <= 1800000) {
+        return 3.6 * COIN;
+    }
+    else if (nHeight <= 1900000) {
+        return 3.7 * COIN;
+    }
+    else if (nHeight <= 2000000) {
+        return 4.3 * COIN;
+    }
+    else if (nHeight <= 2100000) {
+        return 4.4 * COIN;
+    }
+    else if (nHeight <= 2200000) {
+        return 4.5 * COIN;
+    }
+    else if (nHeight <= 2300000) {
+        return 4.6 * COIN;
+    }
+    else if (nHeight <= 2400000) {
+        return 5.6 * COIN;
+    }
+    else if (nHeight <= 2500000) {
+        return 5.7 * COIN;
+    }
+    else if (nHeight <= 2600000) {
+        return 5.9 * COIN;
+    }
+    else if (nHeight <= 2700000) {
+        return 6.1 * COIN;
+    }
+    else if (nHeight <= 2800000) {
+        return 11 * COIN;
+    }
+    else if (nHeight <= 2900000) {
+        return 13.5 * COIN;
+    }
+    else if (nHeight <= 3000000) {
+        return 18 * COIN;
+    }
+    else if (nHeight <= 3100000) {
+        return 18.5 * COIN;
+    }
+    else if (nHeight <= 3200000) {
+        return 28 * COIN;
+    }
+    else if (nHeight <= 3300000) {
+        return 45 * COIN;
+    }
+    else if (nHeight <= 3400000) {
+        return 55 * COIN;
+    }
+    else if (nHeight <= 3500000) {
+        return 65 * COIN;
+    }
+    else if (nHeight <= 3600000) {
+        return 75 * COIN;
+    }
+    else if (nHeight <= 3700000) {
+        return 85 * COIN;
+    }
+    else if (nHeight <= 3800000) {
+        return 95 * COIN;
+    }
+    else if (nHeight <= 3900000) {
+        return 100 * COIN;
+    }
+    else if (nHeight <= 4000000) {
+        return 110 * COIN;
+    }
+    else if (nHeight >= 4000001) {
+        return 145 * COIN;
+    }
+    else {
+        return 0 * COIN;
+    }
 }
 
 void CMasternode::InitMasternodeCollateralList() {
